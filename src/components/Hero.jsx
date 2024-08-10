@@ -24,6 +24,14 @@ const spin = keyframes`
   }
 `;
 
+// #To make it spin 3D
+// from {
+//   transform: rotateY(0deg);
+// }
+// to {
+//   transform: rotateY(360deg);
+// }
+
 const StyledHero = styled.header`
   position: relative;
   display: grid;
@@ -119,6 +127,11 @@ const Hero = ({ name }) => {
               alt="React Logo"
               className="w-75 mx-auto hero-img"
             />
+            {/* <Row className="align-items-center text-center mt-3">
+              <Col>
+                <p>"This is the time of the curious"</p>
+              </Col>
+            </Row> */}
           </Col>
         </Row>
         <Row className="align-items-end down-container">
