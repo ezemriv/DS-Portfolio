@@ -48,7 +48,7 @@ const AboutMe = ({ avatar_url, bio, moreInfo }) => {
                 alt="GitHub Avatar"
                 loading="lazy"
                 className="mx-auto rounded-circle border border-primary-subtle"
-                style={{ width: "15rem", height: "15rem" }}
+                style={{ width: "20rem", height: "20rem" }}
               />
             </Col>
           </Row>
