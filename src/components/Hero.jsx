@@ -1,6 +1,6 @@
 import React from "react";
 // Styles
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 // State
 import PropTypes from "prop-types";
 // Icons
