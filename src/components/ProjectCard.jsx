@@ -26,6 +26,7 @@ const StyledCard = styled.div`
     .card-img-top {
       height: 50%;
       object-fit: contain;
+      margin-top: 20px;
     }
 
     .card-link {
