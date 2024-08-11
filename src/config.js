@@ -9,7 +9,10 @@ import HeroLight from "./images/hero-light.jpg";
 import HeroDark from "./images/hero-dark.jpg";
 
 // Projects Images (add your images to the images directory and import below)
+import cifar_logo from "./images/cifar10.jpg";
+import fao_logo from "./images/map.jpg";
 import Logo from "./images/logo.svg";
+
 
 /* START HERE
  **************************************************************
@@ -136,8 +139,20 @@ export const filteredProjects = ["ISIC-2024-SkinCancer3D-Detection", "CIFAR10-CN
 // Replace the defualt GitHub image for matching repos below (images imported above - lines 7-8)
 export const projectCardImages = [
   {
-    name: "example-1",
+    name: "ISIC-2024-SkinCancer3D-Detection",
     image: Logo,
+  },
+  {
+    name: "CIFAR10-CNN-optimization",
+    image: cifar_logo,
+  },
+  {
+    name: "MLForecast-Enhanced-TimeSeries",
+    image: fao_logo,
+  },
+  {
+    name: "ezemriv.github.io",
+    image: fao_logo,
   },
 ];
 

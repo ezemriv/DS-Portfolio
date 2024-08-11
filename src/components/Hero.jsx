@@ -6,31 +6,14 @@ import PropTypes from "prop-types";
 // Icons
 import { Icon } from "@iconify/react";
 // Images
-import Logo from "../images/logo.svg";
+// import Logo from "../images/logo.svg";
 import { Light, Dark } from "../config";
 // Components
 import { useErrorBoundary } from "react-error-boundary";
 import { Link } from "react-scroll";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import SocialLinks from "./SocialLinks";
-
-// #region styled-components
-const spin = keyframes`
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-`;
-
-// #To make it spin 3D
-// from {
-//   transform: rotateY(0deg);
-// }
-// to {
-//   transform: rotateY(360deg);
-// }
+import { TypeAnimation } from 'react-type-animation';
 
 const StyledHero = styled.header`
   position: relative;
@@ -73,12 +56,6 @@ const StyledHero = styled.header`
     height: 10rem;
   }
 
-  @media (prefers-reduced-motion: no-preference) {
-    .hero-img {
-      animation: ${spin} infinite 20s linear;
-    }
-  }
-
   @media screen and (min-width: 1180px) {
     &::before {
       background: ${({ theme }) =>
@@ -114,19 +91,43 @@ const Hero = ({ name }) => {
       <Container>
         <Row className="align-items-center text-center">
           <Col>
+            <h2 className="mb-4">Hi there! I'm</h2>
             <h1 className="mb-3 display-3 title">
               {name === null ? "null" : name}
             </h1>
+            <TypeAnimation
+              cursor={true}
+              sequence={[
+                'A Data Scientist.',
+                2000,
+                'Well... actually a Scientist.',
+                2000,
+                'A PhD.',
+                2000,
+                'But also an innovative thinker.',
+                2000,
+                'A problem solver.',
+                1000,
+                'An AI enthusiast.',
+                1000,
+                "A...",
+                1000,
+                "Ok... I'm running out of ideas...",
+                1000,
+                "You can go to my projects now...",
+                1000,
+                "Feel free to contact me.",
+                500,
+              ]}
+              speed={50}
+              deletionSpeed={65}
+              wrapper="h2"
+              repeat={Infinity}
+              className="mb-4"
+            />
             <div className="d-flex align-items-center justify-content-center">
               <SocialLinks />
             </div>
-          </Col>
-          <Col className="d-none d-md-block">
-            <img
-              src={Logo}
-              alt="React Logo"
-              className="w-75 mx-auto hero-img"
-            />
           </Col>
         </Row>
         <Row className="align-items-end down-container">
