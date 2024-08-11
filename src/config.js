@@ -52,21 +52,6 @@ export const skillData = [
     skill: <Icon icon="devicon-plain:r" className="display-4" />,
     name: "R",
   },
-  // {
-  //   id: 3,
-  //   skill: <Icon icon="devicon:bash" className="display-4" />,
-  //   name: "Bash",
-  // },
-  // {
-  //   id: 4,
-  //   skill: <Icon icon="devicon-plain:html5" className="display-4" />,
-  //   name: "HTML",
-  // },
-  // {
-  //   id: 5,
-  //   skill: <Icon icon="devicon-plain:css3" className="display-4" />,
-  //   name: "CSS",
-  // },
   {
     id: 3,
     skill: <Icon icon="devicon-plain:sqldeveloper" className="display-4" />,
@@ -83,39 +68,59 @@ export const skillData = [
     name: "Numpy",
   },
   {
-    id: 12,
+    id: 6,
     skill: <Icon icon="simple-icons:polars" className="display-4" />,
     name: "Polars",
   },
   {
-    id: 6,
+    id: 7,
+    skill: <Icon icon="devicon-plain:matplotlib" className="display-4" />,
+    name: "Matplotlib/Seaborn",
+  },
+  {
+    id: 8,
     skill: <Icon icon="devicon-plain:plotly" className="display-4" />,
     name: "Plotly",
   },
   {
-    id: 7,
+    id: 9,
     skill: <Icon icon="devicon-plain:scikitlearn" className="display-4" />,
     name: "SciKit-Learn",
   },
   {
-    id: 8,
-    skill: <Icon icon="devicon:tensorflow" className="display-4" />,
+    id: 10,
+    skill: <Icon icon="simple-icons:tensorflow" className="display-4" />,
     name: "TensorFlow",
   },
   {
-    id: 9,
-    skill: <Icon icon="devicon:pytorch" className="display-4" />,
+    id: 11,
+    skill: <Icon icon="simple-icons:pytorch" className="display-4" />,
     name: "PyTorch",
   },
   {
-    id: 10,
+    id: 12,
     skill: <Icon icon="bi:git" className="display-4" />,
     name: "Git",
   },
   {
-    id: 11,
+    id: 13,
     skill: <Icon icon="devicon-plain:docker" className="display-4" />,
     name: "Docker",
+  },
+  {
+    id: 14,
+    skill: <Icon icon="solar:dna-broken" className="display-4" />,
+    name: "Bioinformatics",
+  },
+  {
+    id: 15,
+    skill: <Icon icon="devicon-plain:html5" className="display-4" />,
+    name: "HTML",
+  },
+  {
+    id: 16,
+    skill: <Icon icon="devicon-plain:css3" className="display-4" />,
+    name: "CSS",
   },
 ];
 

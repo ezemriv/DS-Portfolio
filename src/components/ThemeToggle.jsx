@@ -74,7 +74,7 @@ const ThemeToggle = ({ closeDelay = 250, setExpanded, setTheme }) => {
       />
       <div>
         {theme === "light" ? (
-          <Icon icon="game-icons:sunflower" />
+          <Icon icon="game-icons:sun" />
         ) : (
           <Icon icon="game-icons:moon" />
         )}
