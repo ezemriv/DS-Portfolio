@@ -13,7 +13,9 @@ import cifar_logo from "./images/cifar2.jpg";
 import fao_logo from "./images/fao_map.png";
 import forecast_logo from "./images/forecast.jpg";
 import skin_logo from "./images/3Dskin.jpg";
-
+import portfolio_logo from "./images/portfolio.jpg";
+import house_logo from "./images/houses.jpg";
+import food_app_logo from "./images/fao_app.jpg";
 
 /* START HERE
  **************************************************************
@@ -79,7 +81,7 @@ export const skillData = [
   {
     id: 7,
     skill: <Icon icon="devicon-plain:matplotlib" className="display-4" />,
-    name: "Matplotlib/Seaborn",
+    name: "Matplotlib\nSeaborn",
   },
   {
     id: 8,
@@ -154,6 +156,18 @@ export const projectCardImages = [
   {
     name: "ezemriv.github.io",
     image: fao_logo,
+  },
+  {
+    name: "DS-Portfolio",
+    image: portfolio_logo,
+  },
+  {
+    name: "House-Price-Prediction",
+    image: house_logo,
+  },
+  {
+    name: "food_emissions-app",
+    image: food_app_logo,
   },
 ];
 
