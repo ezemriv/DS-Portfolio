@@ -1,22 +1,25 @@
 {
   "files": {
     "main.css": "/DS-Portfolio/static/css/main.746273fc.css",
-    "main.js": "/DS-Portfolio/static/js/main.ef7fbfcc.js",
+    "main.js": "/DS-Portfolio/static/js/main.c14f0be2.js",
     "static/media/fao_map.png": "/DS-Portfolio/static/media/fao_map.df3f349f1c215f0fa857.png",
     "static/media/hero-light.jpg": "/DS-Portfolio/static/media/hero-light.f18b695ddd5f1f0fa3fb.jpg",
+    "static/media/houses.jpg": "/DS-Portfolio/static/media/houses.4cf35b259491ecfca828.jpg",
     "static/media/3Dskin.jpg": "/DS-Portfolio/static/media/3Dskin.93979f7dd74dac720323.jpg",
     "static/media/cifar2.jpg": "/DS-Portfolio/static/media/cifar2.5ae9a5080bef141cc66e.jpg",
     "static/media/hero-dark.jpg": "/DS-Portfolio/static/media/hero-dark.89e63f6b66c4b7fd31db.jpg",
     "static/media/forecast.jpg": "/DS-Portfolio/static/media/forecast.4f0ddfe17d65b84de5bb.jpg",
+    "static/media/portfolio.jpg": "/DS-Portfolio/static/media/portfolio.54f26a572f75e35139b2.jpg",
+    "static/media/fao_app.jpg": "/DS-Portfolio/static/media/fao_app.f2ff3a641b6ae3b85c72.jpg",
     "service-worker.js": "/DS-Portfolio/service-worker.js",
     "static/media/GH.svg": "/DS-Portfolio/static/media/GH.b9e9a9aa6f05e9dfe5dcb8991bda3e4d.svg",
     "static/media/logo.svg": "/DS-Portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/DS-Portfolio/index.html",
     "main.746273fc.css.map": "/DS-Portfolio/static/css/main.746273fc.css.map",
-    "main.ef7fbfcc.js.map": "/DS-Portfolio/static/js/main.ef7fbfcc.js.map"
+    "main.c14f0be2.js.map": "/DS-Portfolio/static/js/main.c14f0be2.js.map"
   },
   "entrypoints": [
     "static/css/main.746273fc.css",
-    "static/js/main.ef7fbfcc.js"
+    "static/js/main.c14f0be2.js"
   ]
 }
