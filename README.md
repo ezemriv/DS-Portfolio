@@ -6,6 +6,10 @@ Welcome to my data science portfolio! --> [HERE](https://ezemriv.github.io/DS-Po
 
 Here, you'll find a collection of projects showcasing my expertise in data visualization, statistical analysis, and machine learning.
 
+<a href="https://ezemriv.github.io/DS-Portfolio/" target="_blank">
+    <img src="https://img.shields.io/badge/Go%20To%20Website-grey" style="height: 25px; width: auto;">
+</a>
+
 ## Projects
 
 - **PhD & Postdoctoral Projects**: In-depth projects exploring cancer datasets and my own experiment's data.
