@@ -10,12 +10,12 @@ import HeroDark from "./images/hero-dark.jpg";
 
 // Projects Images (add your images to the images directory and import below)
 import cifar_logo from "./images/cifar2.jpg";
-import fao_logo from "./images/fao_map.png";
 import forecast_logo from "./images/forecast.jpg";
 import skin_logo from "./images/3Dskin.jpg";
 import portfolio_logo from "./images/portfolio.jpg";
 import house_logo from "./images/houses.jpg";
 import food_app_logo from "./images/fao_app.jpg";
+import old_portfolio_logo from "./images/old-portfolio.jpg";
 
 /* START HERE
  **************************************************************
@@ -137,38 +137,24 @@ export const resume = "https://drive.google.com/file/d/1fADO9m6TjEejDPNtaly1ccTQ
  ************************************************************** 
   List the repo names (string - "your-repo-name") you want to include (they will be sorted alphabetically). If empty, only the first 3 will be included.
 */
-export const filteredProjects = ["ISIC-2024-SkinCancer3D-Detection", "CIFAR10-CNN-optimization", "MLForecast-Enhanced-TimeSeries"];
+export const filteredProjects = [
+  "ISIC-2024-SkinCancer3D-Detection", 
+  "CIFAR10-CNN-optimization", 
+  "MLForecast-Enhanced-TimeSeries",
+  "DS-Portfolio",
+  "House-Price-Prediction",
+  "food_emissions-app",
+];
 
 // Replace the defualt GitHub image for matching repos below (images imported above - lines 7-8)
 export const projectCardImages = [
-  {
-    name: "ISIC-2024-SkinCancer3D-Detection",
-    image: skin_logo,
-  },
-  {
-    name: "CIFAR10-CNN-optimization",
-    image: cifar_logo,
-  },
-  {
-    name: "MLForecast-Enhanced-TimeSeries",
-    image: forecast_logo,
-  },
-  {
-    name: "ezemriv.github.io",
-    image: fao_logo,
-  },
-  {
-    name: "DS-Portfolio",
-    image: portfolio_logo,
-  },
-  {
-    name: "House-Price-Prediction",
-    image: house_logo,
-  },
-  {
-    name: "food_emissions-app",
-    image: food_app_logo,
-  },
+  { name: "ISIC-2024-SkinCancer3D-Detection", image: skin_logo },
+  { name: "CIFAR10-CNN-optimization", image: cifar_logo },
+  { name: "MLForecast-Enhanced-TimeSeries", image: forecast_logo },
+  { name: "Minimal-Quick-Portfolio", image: old_portfolio_logo },
+  { name: "DS-Portfolio", image: portfolio_logo },
+  { name: "House-Price-Prediction", image: house_logo },
+  { name: "food_emissions-app", image: food_app_logo },
 ];
 
 /* Contact Info

@@ -6,8 +6,6 @@ import { selectProjects, selectMainProjects } from "../app/projectsSlice";
 import { useGetProjectsQuery } from "../app/apiSlice";
 // Router
 import { Link } from "react-router-dom";
-// Icons
-import { Icon } from "@iconify/react";
 // Components
 import { Element } from "react-scroll";
 import { Button, Col, Container, Row } from "react-bootstrap";
@@ -63,7 +61,7 @@ const Projects = () => {
                       theme === "light" ? "outline-dark" : "outline-light"
                     }
                   >
-                    All <Icon icon="icomoon-free:github" /> Projects
+                    All Projects
                   </Button>
                 </Link>
               </Container>

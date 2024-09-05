@@ -98,24 +98,26 @@ const Hero = ({ name }) => {
             <TypeAnimation
               cursor={true}
               sequence={[
-                'A Data Scientist.',
+                'Data Scientist.',
                 1500,
-                'A PhD Cancer Researcher.',
+                'PhD Researcher.',
                 1500,
-                'An innovative thinker.',
+                'Innovative thinker.',
                 1000,
-                'A problem solver.',
+                'Problem solver.',
                 1000,
-                'An AI enthusiast.',
+                'AI enthusiast.',
                 1000,
-                "A...",
+                "...",
                 500,
                 "Ok... I'm running out of ideas...",
                 500,
                 "You can go to my projects now...",
                 500,
-                "Feel free to contact me.",
+                "And feel free to contact me!",
                 500,
+                " ",
+                1000,
               ]}
               speed={50}
               deletionSpeed={65}

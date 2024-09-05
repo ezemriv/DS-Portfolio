@@ -94,8 +94,8 @@ const App = ({ projectCardImages = [], filteredProjects = [] }) => {
         filteredProjects !== (undefined && null) &&
         filteredProjects.length !== 0
       ) {
-        const tempArray = projects.filter((obj) =>
-          filteredProjects.includes(obj.name)
+        const tempArray = filteredProjects.map((projectName) =>
+          projects.find((obj) => obj.name === projectName)
         );
         tempArray.length !== 0
           ? dispatch(setMainProjects([...tempArray]))
