@@ -1,4 +1,4 @@
-<img src="https://img.shields.io/badge/React-white?logo=react&logoColor=61DAFB" style="height: 25px; width: auto;">  <img src="https://img.shields.io/badge/JavaScript-white?logo=javascript&logoColor=F7DF1E" style="height: 25px; width: auto;">  <img src="https://img.shields.io/badge/CSS-white?logo=css3&logoColor=1572B6" style="height: 25px; width: auto;">
+<img src="https://img.shields.io/badge/React?logo=react&logoColor=61DAFB" style="height: 25px; width: auto;">  <img src="https://img.shields.io/badge/JavaScript-white?logo=javascript&logoColor=F7DF1E" style="height: 25px; width: auto;">  <img src="https://img.shields.io/badge/CSS-white?logo=css3&logoColor=1572B6" style="height: 25px; width: auto;">
 
 # Ezequiel Rivero's Data Science and ML Portfolio
 
