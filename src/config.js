@@ -16,6 +16,7 @@ import portfolio_logo from "./images/portfolio.jpg";
 import house_logo from "./images/houses.jpg";
 import food_app_logo from "./images/fao_app.jpg";
 import old_portfolio_logo from "./images/old-portfolio.jpg";
+import fao_map_logo from "./images/fao_map.jpg";
 
 /* START HERE
  **************************************************************
@@ -41,7 +42,7 @@ export { HeroDark as Dark };
   Add a second paragraph for the about me section.
 */
 export const moreInfo =
-  "Currently expanding my skillset in machine learning. Proficient in R and Python. Passionate about data-driven solutions in healthcare and sustainability. Love problem-solving, nature, and sports. Feel free to contact me!";
+  "Currently expanding my skillset in machine learning and MLOps. Proficient in R and Python. Passionate about data-driven solutions in healthcare and sustainability. Love problem-solving, nature, and sports. Feel free to contact me!";
 
 /* Skills
  ************************************************************** 
@@ -139,11 +140,11 @@ export const resume = "https://drive.google.com/file/d/1fADO9m6TjEejDPNtaly1ccTQ
 */
 export const filteredProjects = [
   "ISIC-2024-SkinCancer3D-Detection", 
-  "CIFAR10-CNN-optimization", 
+  "CIFAR10-CNN-optimization",
+  "FAO-Food-CO2-Footprint",
   "MLForecast-Enhanced-TimeSeries",
   "DS-Portfolio",
-  "House-Price-Prediction",
-  "food_emissions-app",
+  "Food-CO2-app",
 ];
 
 // Replace the defualt GitHub image for matching repos below (images imported above - lines 7-8)
@@ -154,7 +155,8 @@ export const projectCardImages = [
   { name: "Minimal-Quick-Portfolio", image: old_portfolio_logo },
   { name: "DS-Portfolio", image: portfolio_logo },
   { name: "House-Price-Prediction", image: house_logo },
-  { name: "food_emissions-app", image: food_app_logo },
+  { name: "Food-CO2-app", image: food_app_logo },
+  { name: "FAO-Food-CO2-Footprint", image: fao_map_logo },
 ];
 
 /* Contact Info
