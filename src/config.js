@@ -96,8 +96,8 @@ export const skillData = [
   },
   {
     id: 10,
-    skill: <Icon icon="simple-icons:tensorflow" className="display-4" />,
-    name: "TensorFlow",
+    skill: <Icon icon="devicon-plain:keras" className="display-4" />,
+    name: "Keras",
   },
   {
     id: 11,
@@ -132,7 +132,7 @@ export const skillData = [
 ];
 
 // Resume link (string - "https://YourResumeUrl")
-export const resume = "https://drive.google.com/file/d/1fADO9m6TjEejDPNtaly1ccTQiO4vUse2/view?usp=sharing";
+export const resume = "https://drive.google.com/file/d/1JVwKHYfkRKhCuE92FlIg3eNy9MdA2KnI/view?usp=sharing";
 
 /* Projects
  ************************************************************** 
