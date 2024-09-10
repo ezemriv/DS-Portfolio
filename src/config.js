@@ -41,8 +41,11 @@ export { HeroDark as Dark };
  **************************************************************
   Add a second paragraph for the about me section.
 */
-export const moreInfo =
-  "Currently expanding my skillset in machine learning and MLOps. Proficient in R and Python. Passionate about data-driven solutions in healthcare and sustainability. Love problem-solving, nature, and sports. Feel free to contact me!";
+export const moreInfo = [
+  "Hey there! I'm Ezequiel, a former molecular researcher now data scientist with a passion for puzzles. With more than a decade of experience in data processing and statistical analysis, I'm now focused on using data to solve real-world problems, especially in healthcare and sustainability.",
+  "My interdisciplinary background enables me to approach challenges creatively. Recently, I've been diving deeper into machine learning and MLOps, with a particular interest in computer vision.",
+  "When I'm not coding, you'll find me hiking, playing volleyball, or enjoying a good barbecue. Feel free to reach out—I’m always open to new challenges!"
+];
 
 /* Skills
  ************************************************************** 
@@ -132,7 +135,7 @@ export const skillData = [
 ];
 
 // Resume link (string - "https://YourResumeUrl")
-export const resume = "https://drive.google.com/file/d/1JVwKHYfkRKhCuE92FlIg3eNy9MdA2KnI/view?usp=sharing";
+export const resume = "https://drive.google.com/file/d/1HOZU-AdnAm29u-vVaorSSf07Ce49Ew2P/view?usp=sharing";
 
 /* Projects
  ************************************************************** 

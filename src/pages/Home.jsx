@@ -3,9 +3,9 @@ import React from "react";
 import { useGetUsersQuery } from "../app/apiSlice";
 // Components
 import Hero from "../components/Hero";
-import AboutMe from "../components/AboutMe";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
+import AboutMe from "../components/AboutMe";
 import Contact from "../components/Contact";
 import BackToTop from "../components/BackToTop";
 // Config
@@ -25,13 +25,13 @@ const Home = () => {
     <>
       <Hero name={userData.name} />
       <main>
+        <Projects filteredProjects={filteredProjects} />
+        <Skills />
         <AboutMe
           avatar_url={userData.avatar_url}
           bio={userData.bio}
           moreInfo={moreInfo}
         />
-        <Projects filteredProjects={filteredProjects} />
-        <Skills />
         <Contact />
       </main>
       <BackToTop />

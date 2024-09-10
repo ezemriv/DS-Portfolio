@@ -10,12 +10,15 @@ import Title from "./Title";
 
 // #region styled-components
 const StyledAboutMe = styled.section`
-  p {
-    font-size: 1.25rem;
+  .bio-text {
+    font-size: 1.1rem;
+    width: 110%;
   }
-  .img {
-    width: 18rem;
-    height: 18rem;
+
+  .avatar {
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
   }
 `;
 // #endregion
@@ -27,7 +30,7 @@ const propTypes = {
   moreInfo: PropTypes.string,
 };
 
-const AboutMe = ({ avatar_url, bio, moreInfo }) => {
+const AboutMe = ({ avatar_url, moreInfo }) => {
   return (
     <Element name={"About"} id="about">
       <StyledAboutMe className="section">
@@ -37,9 +40,10 @@ const AboutMe = ({ avatar_url, bio, moreInfo }) => {
           </Container>
           <Row className="align-items-center mt-5">
             <Col className="d-flex flex-column text-center">
-              <Container>
-                {bio && <p>{bio}</p>}
-                {moreInfo && <p>{moreInfo}</p>}
+              <Container className="bio-text">
+                {moreInfo && moreInfo.map((paragraph, index) => (
+                  <p key={index}>{paragraph}</p>
+                ))}
               </Container>
             </Col>
             <Col className="d-none d-md-block text-center">
@@ -47,8 +51,7 @@ const AboutMe = ({ avatar_url, bio, moreInfo }) => {
                 src={avatar_url}
                 alt="GitHub Avatar"
                 loading="lazy"
-                className="mx-auto rounded-circle border border-primary-subtle"
-                style={{ width: "20rem", height: "20rem" }}
+                className="avatar rounded-circle border border-primary-subtle"
               />
             </Col>
           </Row>
