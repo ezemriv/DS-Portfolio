@@ -17,6 +17,7 @@ import house_logo from "./images/houses.jpg";
 import food_app_logo from "./images/fao_app.jpg";
 import old_portfolio_logo from "./images/old-portfolio.jpg";
 import fao_map_logo from "./images/fao_map.jpg";
+import gflights_logo from "./images/gflights.jpg";
 
 /* START HERE
  **************************************************************
@@ -160,6 +161,7 @@ export const projectCardImages = [
   { name: "House-Price-Prediction", image: house_logo },
   { name: "Food-CO2-app", image: food_app_logo },
   { name: "FAO-Food-CO2-Footprint", image: fao_map_logo },
+  { name: "Google-Flights-Scrapper", image: gflights_logo },
 ];
 
 /* Contact Info
