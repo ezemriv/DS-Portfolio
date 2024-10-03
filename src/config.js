@@ -18,6 +18,7 @@ import food_app_logo from "./images/fao_app.jpg";
 import old_portfolio_logo from "./images/old-portfolio.jpg";
 import fao_map_logo from "./images/fao_map.jpg";
 import gflights_logo from "./images/gflights.jpg";
+import bcn_logo from "./images/bcn_.jpg";
 
 /* START HERE
  **************************************************************
@@ -135,8 +136,8 @@ export const skillData = [
   },
 ];
 
-// Resume link (string - "https://YourResumeUrl")
-export const resume = "https://drive.google.com/file/d/1HOZU-AdnAm29u-vVaorSSf07Ce49Ew2P/view?usp=sharing";
+// Resume link
+export const resume = "https://drive.google.com/file/d/16gwLA25kcqrANBVyzQcrQAhGVw9aSZmD/view?usp=sharing";
 
 /* Projects
  ************************************************************** 
@@ -162,6 +163,7 @@ export const projectCardImages = [
   { name: "Food-CO2-app", image: food_app_logo },
   { name: "FAO-Food-CO2-Footprint", image: fao_map_logo },
   { name: "Google-Flights-Scrapper", image: gflights_logo },
+  { name: "Hackaton_BCNactiva", image: bcn_logo },
 ];
 
 /* Contact Info
