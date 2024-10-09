@@ -44,9 +44,9 @@ export { HeroDark as Dark };
   Add a second paragraph for the about me section.
 */
 export const moreInfo = [
-  "Hey there! I'm Ezequiel, a former molecular researcher now data scientist with a passion for puzzles. With more than a decade of experience in data processing and statistical analysis, I'm now focused on using data to solve real-world problems, especially in healthcare and sustainability.",
-  "My interdisciplinary background enables me to approach challenges creatively. Recently, I've been diving deeper into machine learning and MLOps, with a particular interest in computer vision.",
-  "When I'm not coding, you'll find me hiking, playing volleyball, or enjoying a good barbecue. Feel free to reach out—I’m always open to new challenges!"
+  "Hey there! I'm Ezequiel, a former molecular researcher turned data scientist with over a decade of experience in data mining, statistical modeling, and machine learning. My passion lies in applying advanced analytics to solve real-world challenges, particularly in healthcare and sustainability.",
+  "My interdisciplinary background enables me to approach challenges creatively. Lately, I've been diving deeper into MLOps and deep learning, with a particular interest on computer vision.",
+  "When I'm not coding, you'll find me hiking, playing volleyball, or enjoying a good barbecue. Feel free to reach out—I'm always open to new challenges!"
 ];
 
 /* Skills

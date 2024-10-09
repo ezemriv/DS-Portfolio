@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 // Icons
 import { Icon } from "@iconify/react";
 // Images
-import GH from "../images/GH.svg";
+import GH from "../images/loading.png";
 
 // #region styled-components
 const StyledCard = styled.div`
