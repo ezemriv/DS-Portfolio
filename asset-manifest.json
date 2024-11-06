@@ -1,8 +1,12 @@
 {
   "files": {
     "main.css": "/DS-Portfolio/static/css/main.746273fc.css",
-    "main.js": "/DS-Portfolio/static/js/main.b8a73d94.js",
+    "main.js": "/DS-Portfolio/static/js/main.fb0ca965.js",
+    "static/media/bids.webp": "/DS-Portfolio/static/media/bids.d599d95eeb719b398e3e.webp",
+    "static/media/robot.webp": "/DS-Portfolio/static/media/robot.47cc38c3ea30208c44f4.webp",
     "static/media/bcn_.jpg": "/DS-Portfolio/static/media/bcn_.556804136783cf6a3522.jpg",
+    "static/media/bcn_tourist.webp": "/DS-Portfolio/static/media/bcn_tourist.6873da99aa4a13b4651a.webp",
+    "static/media/credit.webp": "/DS-Portfolio/static/media/credit.8990373e00476abdfa48.webp",
     "static/media/hero-light.jpg": "/DS-Portfolio/static/media/hero-light.f18b695ddd5f1f0fa3fb.jpg",
     "static/media/loading.png": "/DS-Portfolio/static/media/loading.8774df661b722bd6b91a.png",
     "static/media/houses.jpg": "/DS-Portfolio/static/media/houses.4cf35b259491ecfca828.jpg",
@@ -16,13 +20,12 @@
     "static/media/portfolio.jpg": "/DS-Portfolio/static/media/portfolio.0608aeaaf574da266342.jpg",
     "static/media/old-portfolio.jpg": "/DS-Portfolio/static/media/old-portfolio.21e9f4f115b68f766e0f.jpg",
     "service-worker.js": "/DS-Portfolio/service-worker.js",
-    "static/media/logo.svg": "/DS-Portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/DS-Portfolio/index.html",
     "main.746273fc.css.map": "/DS-Portfolio/static/css/main.746273fc.css.map",
-    "main.b8a73d94.js.map": "/DS-Portfolio/static/js/main.b8a73d94.js.map"
+    "main.fb0ca965.js.map": "/DS-Portfolio/static/js/main.fb0ca965.js.map"
   },
   "entrypoints": [
     "static/css/main.746273fc.css",
-    "static/js/main.b8a73d94.js"
+    "static/js/main.fb0ca965.js"
   ]
 }
