@@ -17,6 +17,8 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import AllProjects from "./pages/AllProjects";
 import NotFound from "./pages/NotFound";
+// Import excludedProjects from config
+import { excludedProjects } from "./config";
 // Components
 import { ErrorBoundary } from "react-error-boundary";
 import AppFallback from "./components/AppFallback";
@@ -55,26 +57,28 @@ const App = ({ projectCardImages = [], filteredProjects = [] }) => {
   React.useEffect(() => {
     const tempData = [];
     if (projectsData !== undefined && projectsData.length !== 0) {
-      projectsData.forEach((element) => {
-        const tempObj = {
-          id: null,
-          homepage: null,
-          description: null,
-          image: null,
-          name: null,
-          html_url: null,
-        };
-        tempObj.id = element.id;
-        tempObj.homepage = element.homepage;
-        tempObj.description = element.description;
-        tempObj.name = element.name;
-        tempObj.html_url = element.html_url;
-        tempData.push(tempObj);
-      });
-      if (
-        projectCardImages !== (undefined && null) &&
-        projectCardImages.length !== 0
-      ) {
+      projectsData
+        // Exclude projects listed in excludedProjects
+        .filter((project) => !excludedProjects.includes(project.name))
+        .forEach((element) => {
+          const tempObj = {
+            id: null,
+            homepage: null,
+            description: null,
+            image: null,
+            name: null,
+            html_url: null,
+          };
+          tempObj.id = element.id;
+          tempObj.homepage = element.homepage;
+          tempObj.description = element.description;
+          tempObj.name = element.name;
+          tempObj.html_url = element.html_url;
+          tempData.push(tempObj);
+        });
+      
+      // Add custom images to matching projects
+      if (projectCardImages !== (undefined && null) && projectCardImages.length !== 0) {
         projectCardImages.forEach((element) => {
           tempData.forEach((ele) => {
             if (element.name.toLowerCase() === ele.name.toLowerCase()) {
@@ -83,6 +87,8 @@ const App = ({ projectCardImages = [], filteredProjects = [] }) => {
           });
         });
       }
+      
+      // Dispatch the filtered project list
       dispatch(setProjects(tempData));
     }
   }, [projectsData, projectCardImages, dispatch]);

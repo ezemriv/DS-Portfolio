@@ -8,14 +8,7 @@ import { useGetUsersQuery, useGetProjectsQuery } from "../app/apiSlice";
 // Icons
 import { Icon } from "@iconify/react/dist/iconify.js";
 // Components
-import {
-  Col,
-  Container,
-  FormControl,
-  InputGroup,
-  Pagination,
-  Row,
-} from "react-bootstrap";
+import { Col, Container, FormControl, InputGroup, Row } from "react-bootstrap";
 import Loading from "../components/Loading";
 import Title from "../components/Title";
 import ProjectCard from "../components/ProjectCard";
@@ -41,8 +34,6 @@ const StyledSection = styled.section`
 const AllProjects = () => {
   const [searchInput, setSearchInput] = React.useState("");
   const [filteredResults, setFilteredResults] = React.useState([]);
-  const [pageItems, setPageItems] = React.useState([]);
-  const [activePage, setActivePage] = React.useState(1);
   const data = useSelector(selectProjects);
   const { data: userData } = useGetUsersQuery();
   const { isLoading, isSuccess, isError, error } = useGetProjectsQuery();
@@ -54,60 +45,16 @@ const AllProjects = () => {
 
   React.useEffect(() => {
     if (searchInput !== "") {
+      // Filter projects based on search input
       const filteredData = data.filter((item) => {
         return item.name.toLowerCase().includes(searchInput.toLowerCase());
       });
-      const tempPageItems = [];
-      for (
-        let number = 1;
-        number <= Math.ceil(filteredData.length / 9);
-        number++
-      ) {
-        tempPageItems.push(
-          <Pagination.Item
-            key={number}
-            active={number === activePage}
-            onClick={() => setActivePage(number)}
-          >
-            {number}
-          </Pagination.Item>
-        );
-        setPageItems([...tempPageItems]);
-      }
-      if (activePage === 1) {
-        setFilteredResults(filteredData.slice(0, 9));
-      } else {
-        setFilteredResults(
-          filteredData.slice((activePage - 1) * 9, (activePage - 1) * 9 + 9)
-        );
-      }
+      setFilteredResults(filteredData);
     } else {
-      const tempPageItems = [];
-      for (let number = 1; number <= Math.ceil(data.length / 9); number++) {
-        tempPageItems.push(
-          <Pagination.Item
-            key={number}
-            active={number === activePage}
-            onClick={() => setActivePage(number)}
-          >
-            {number}
-          </Pagination.Item>
-        );
-        setPageItems([...tempPageItems]);
-      }
-      if (activePage === 1) {
-        setFilteredResults(data.slice(0, 9));
-      } else {
-        setFilteredResults(
-          data.slice((activePage - 1) * 9, (activePage - 1) * 9 + 9)
-        );
-      }
+      // Display all projects if there's no search input
+      setFilteredResults(data);
     }
-  }, [searchInput, data, pageItems.length, activePage]);
-
-  React.useEffect(() => {
-    setActivePage(1);
-  }, [searchInput]);
+  }, [searchInput, data]);
 
   if (isLoading) {
     content = (
@@ -139,61 +86,18 @@ const AllProjects = () => {
             />
           </InputGroup>
           <Row xs={1} md={3} lg={3} className="g-4 justify-content-center row">
-            {searchInput.length > 0
-              ? filteredResults.map((element) => {
-                  return (
-                    <Col key={element.id}>
-                      <ProjectCard
-                        image={element.image}
-                        name={element.name}
-                        description={element.description}
-                        url={element.html_url}
-                        demo={element.homepage}
-                      />
-                    </Col>
-                  );
-                })
-              : filteredResults.map((element) => {
-                  return (
-                    <Col key={element.id}>
-                      <ProjectCard
-                        image={element.image}
-                        name={element.name}
-                        description={element.description}
-                        url={element.html_url}
-                        demo={element.homepage}
-                      />
-                    </Col>
-                  );
-                })}
+            {filteredResults.map((element) => (
+              <Col key={element.id}>
+                <ProjectCard
+                  image={element.image}
+                  name={element.name}
+                  description={element.description}
+                  url={element.html_url}
+                  demo={element.homepage}
+                />
+              </Col>
+            ))}
           </Row>
-          <Container className="d-flex justify-content-center mt-5">
-            {pageItems.length <= 2 ? (
-              <Pagination size="lg">{pageItems}</Pagination>
-            ) : (
-              <Pagination>
-                <Pagination.Prev
-                  onClick={() =>
-                    activePage === 1
-                      ? setActivePage(pageItems.length)
-                      : setActivePage(activePage - 1)
-                  }
-                />
-                {pageItems[0]}
-                <Pagination.Ellipsis />
-                <Pagination.Item active={true}>{activePage}</Pagination.Item>
-                <Pagination.Ellipsis />
-                {pageItems[pageItems.length - 1]}
-                <Pagination.Next
-                  onClick={() =>
-                    activePage === pageItems.length
-                      ? setActivePage(1)
-                      : setActivePage(activePage + 1)
-                  }
-                />
-              </Pagination>
-            )}
-          </Container>
         </Container>
       </>
     );

@@ -19,6 +19,10 @@ import old_portfolio_logo from "./images/old-portfolio.jpg";
 import fao_map_logo from "./images/fao_map.jpg";
 import gflights_logo from "./images/gflights.jpg";
 import bcn_logo from "./images/bcn_.jpg";
+import risk_logo from "./images/credit.webp";
+import bids_logo from "./images/bids.webp";
+import aiagent_logo from "./images/robot.webp";
+import tourist_logo from "./images/bcn_tourist.webp";
 
 /* START HERE
  **************************************************************
@@ -137,19 +141,29 @@ export const skillData = [
 ];
 
 // Resume link
-export const resume = "https://drive.google.com/file/d/16gwLA25kcqrANBVyzQcrQAhGVw9aSZmD/view?usp=sharing";
+export const resume = "https://drive.google.com/file/d/13E8jBqm1aAFNYw2Y-kiE5jh7FJY_qrTV/view?usp=sharing";
 
 /* Projects
  ************************************************************** 
   List the repo names (string - "your-repo-name") you want to include (they will be sorted alphabetically). If empty, only the first 3 will be included.
 */
 export const filteredProjects = [
-  "ISIC-2024-SkinCancer3D-Detection", 
+  "AI-Agent-Report-Maker-Deploy",
+  "ISIC-2024-SkinCancer3D-Detection",
+  "Ad-Exchange-Auction-Prediction",
   "CIFAR10-CNN-optimization",
   "FAO-Food-CO2-Footprint",
-  "MLForecast-Enhanced-TimeSeries",
-  "DS-Portfolio",
   "Food-CO2-app",
+];
+
+// Projects to exclude from the "All Projects" page
+export const excludedProjects = [
+  ".tmux",
+  "ezemriv",
+  "kaggle-solutions",
+  "CICD-Drug-Selection-Model",
+  "ML-Forex-TradingBot-IKBR",
+  "TouristTrapp-DataProject",
 ];
 
 // Replace the defualt GitHub image for matching repos below (images imported above - lines 7-8)
@@ -163,7 +177,12 @@ export const projectCardImages = [
   { name: "Food-CO2-app", image: food_app_logo },
   { name: "FAO-Food-CO2-Footprint", image: fao_map_logo },
   { name: "Google-Flights-Scrapper", image: gflights_logo },
-  { name: "Hackaton_BCNactiva", image: bcn_logo },
+  { name: "Barcelona-Traffic-Accident-Forecasting", image: bcn_logo },
+  { name: "Ad-Exchange-Auction-Prediction", image: bids_logo },
+  { name: "AI-Agent-Report-Maker-Deploy", image: aiagent_logo },
+  { name: "AI-Agent-Report-Maker-Full", image: aiagent_logo },
+  { name: "TouristTrapp-FullStack", image: tourist_logo },
+  { name: "CaixaCPC-Technical-RiskModel", image: risk_logo },
 ];
 
 /* Contact Info

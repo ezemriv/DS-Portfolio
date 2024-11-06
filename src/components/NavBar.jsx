@@ -7,9 +7,9 @@ import PropTypes from "prop-types";
 // Router
 import { Link, useLocation } from "react-router-dom";
 // Images
-import defaultLogo from "../images/ezelogo_light.png";
-import lightLogo from "../images/ezelogo_dark.png"; // Image for light theme
-import darkLogo from "../images/ezelogo_light.png";   // Image for dark theme
+import defaultLogo from "../images/erlogo_light.png";
+import lightLogo from "../images/erlogo_dark.png"; // Image for light theme
+import darkLogo from "../images/erlogo_light.png";   // Image for dark theme
 // Components
 import { Link as ScrollLink } from "react-scroll";
 import { Container, Nav, Navbar } from "react-bootstrap";
