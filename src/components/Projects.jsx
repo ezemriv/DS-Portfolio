@@ -4,8 +4,6 @@ import { useSelector } from "react-redux";
 import { selectMode } from "../app/appSlice";
 import { selectProjects, selectMainProjects } from "../app/projectsSlice";
 import { useGetProjectsQuery } from "../app/apiSlice";
-// Router
-import { Link } from "react-router-dom";
 // Components
 import { Element } from "react-scroll";
 import { Button, Col, Container, Row } from "react-bootstrap";
@@ -52,20 +50,22 @@ const Projects = () => {
                 );
               })}
             </Row>
-            {projects.length > 3 && (
-              <Container className="text-center mt-5">
-                <Link to="/All-Projects">
-                  <Button
-                    size="lg"
-                    variant={
-                      theme === "light" ? "outline-dark" : "outline-light"
-                    }
-                  >
-                    All Projects
-                  </Button>
-                </Link>
-              </Container>
-            )}
+            <Container className="text-center mt-5">
+              <a
+                href="https://github.com/ezemriv"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  size="lg"
+                  variant={
+                    theme === "light" ? "outline-dark" : "outline-light"
+                  }
+                >
+                  View All Projects on GitHub
+                </Button>
+              </a>
+            </Container>
           </>
         )}
       </>
@@ -83,7 +83,7 @@ const Projects = () => {
       <section className="section">
         <Container>
           <Container className="d-flex justify-content-center" style={{ marginBottom: "20px" }}>
-            <Title size={"h2"} text={"Projects"} />
+            <Title size={"h2"} text={"Featured Projects"} />
           </Container>
           {content}
         </Container>

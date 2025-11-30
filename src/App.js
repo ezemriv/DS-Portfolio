@@ -15,7 +15,6 @@ import PropTypes from "prop-types";
 import { HashRouter, Routes, Route } from "react-router-dom";
 // Pages
 import Home from "./pages/Home";
-import AllProjects from "./pages/AllProjects";
 import NotFound from "./pages/NotFound";
 // Import excludedProjects from config
 import { excludedProjects } from "./config";
@@ -153,7 +152,6 @@ const App = ({ projectCardImages = [], filteredProjects = [] }) => {
         </Element>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path="/All-Projects" element={<AllProjects />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer mode={footerTheme} />
